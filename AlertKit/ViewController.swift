@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.presentViewController(AlertKit().showType(.NetworkError), animated: true, completion: nil)
+        self.presentViewController(AlertKit().show(TimeoutAlert()), animated: true, completion: nil)
     }
 }
 
