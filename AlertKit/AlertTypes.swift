@@ -14,7 +14,10 @@ enum Type {
 }
 
 protocol Alertable {
-    func alertData () -> AlertData
+    var data:AlertData {
+        get {}
+    }
+//    func alertData () -> AlertData
 }
 
 struct AlertData {
@@ -23,21 +26,23 @@ struct AlertData {
     let actions:[Actionable]!
 }
 
-struct TimeoutAlert:Alertable {
-    func alertData() -> AlertData {
-        return AlertData(title: "Connection timed out", message: nil, actions: [ActionOK()])
-    }
-}
+//struct TimeoutAlert:Alertable {
+//    func alertData() -> AlertData {
+//        return AlertData(title: "Connection timed out", message: nil, actions: [ActionOK()])
+//    }
+//}
 
 struct NetworkErrorAlert:Alertable {
-    func alertData() -> AlertData {
-        return AlertData(title: "No internet connection.", message: nil, actions: [ActionOK()])
-    }
+    
+    let data = AlertData(title: "No internet connection.", message: nil, actions: [ActionOK()])
+//    func alertData() -> AlertData {
+//        return AlertData(title: "No internet connection.", message: nil, actions: [ActionOK()])
+//    }
 }
 
-struct CredentialsConfirmation:Alertable {
-    func alertData() -> AlertData {
-        return AlertData(title: "Is this correct?", message: "Please check the below information", actions: [ActionCancel()])
-    }
-}
+//struct CredentialsConfirmation:Alertable {
+//    func alertData() -> AlertData {
+//        return AlertData(title: "Is this correct?", message: "Please check the below information", actions: [ActionCancel()])
+//    }
+//}
 

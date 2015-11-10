@@ -8,47 +8,18 @@
 
 import UIKit
 
-//struct DataCreator {
-//    let type:Type
-//    var title:String? {
-//        get {
-//            switch type {
-//                case .Timeout : return TimeoutAlert().title
-//                case .NetworkError : return NetworkErrorAlert().title
-//                case .CredentialsConfirmation : return CredentialsConfirmation().title
-//                default : return nil
-//            }
-//        }
-//    }
-//    
-//    var message:String? {
-//        get {
-//            switch type {
-//                case .CredentialsConfirmation : return CredentialsConfirmation().message
-//                default : return nil
-//            }
-//        }
-//    }
-//    
-//    var actions:[Actionable]? {
-//        get {
-//            switch type {
-//                case .Timeout : return [TimeoutAlert().action]
-//                case .NetworkError : return [NetworkErrorAlert().action];
-//                default : return nil
-//            }
-//        }
-//    }
-//}
-
 struct AlertKit {
-//    func showType (type:Type) -> UIAlertController {
-//        let data = DataCreator(type: type)
-//        let alert = UIAlertController(title: data.title, message: data.message, preferredStyle:.Alert)
-//        return alert
-//    }
-    func show (type:Alertable) -> UIAlertController {
-        let alert = UIAlertController(title: type.alertData().title, message: type.alertData().message, preferredStyle:.Alert)
-        return alert
+    
+    var show:Alertable
+    var from:UIViewController
+
+    func show () {
+        let alert = UIAlertController(title: show.alertData().title, message: show.alertData().message, preferredStyle:.Alert)
+        from.presentViewController(alert, animated: true, completion: nil)
     }
+    
+//    func show (type:Alertable,controller:UIViewController) {
+//        let alert = UIAlertController(title: type.alertData().title, message: type.alertData().message, preferredStyle:.Alert)
+//        controller.presentViewController(alert, animated: true, completion: nil)
+//    }
 }
