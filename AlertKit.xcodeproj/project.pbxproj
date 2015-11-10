@@ -13,7 +13,9 @@
 		9EAE08281BEFCC3000F31E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EAE08271BEFCC3000F31E9D /* Assets.xcassets */; };
 		9EAE08361BEFCC3000F31E9D /* AlertKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08351BEFCC3000F31E9D /* AlertKitTests.swift */; };
 		9EAE08411BEFCC3000F31E9D /* AlertKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08401BEFCC3000F31E9D /* AlertKitUITests.swift */; };
-		9EAE084F1BEFCC5400F31E9D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE084E1BEFCC5400F31E9D /* Alert.swift */; settings = {ASSET_TAGS = (); }; };
+		9EAE084F1BEFCC5400F31E9D /* AlertKIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE084E1BEFCC5400F31E9D /* AlertKIt.swift */; settings = {ASSET_TAGS = (); }; };
+		9EAE08511BF1C89300F31E9D /* AlertTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08501BF1C89300F31E9D /* AlertTypes.swift */; settings = {ASSET_TAGS = (); }; };
+		9EAE08531BF1CE3100F31E9D /* ActionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08521BF1CE3100F31E9D /* ActionTypes.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,9 @@
 		9EAE083C1BEFCC3000F31E9D /* AlertKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAE08401BEFCC3000F31E9D /* AlertKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertKitUITests.swift; sourceTree = "<group>"; };
 		9EAE08421BEFCC3000F31E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EAE084E1BEFCC5400F31E9D /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		9EAE084E1BEFCC5400F31E9D /* AlertKIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertKIt.swift; sourceTree = "<group>"; };
+		9EAE08501BF1C89300F31E9D /* AlertTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTypes.swift; sourceTree = "<group>"; };
+		9EAE08521BF1CE3100F31E9D /* ActionTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,9 @@
 				9EAE08241BEFCC3000F31E9D /* Main.storyboard */,
 				9EAE08271BEFCC3000F31E9D /* Assets.xcassets */,
 				9EAE082C1BEFCC3000F31E9D /* Info.plist */,
-				9EAE084E1BEFCC5400F31E9D /* Alert.swift */,
+				9EAE084E1BEFCC5400F31E9D /* AlertKIt.swift */,
+				9EAE08501BF1C89300F31E9D /* AlertTypes.swift */,
+				9EAE08521BF1CE3100F31E9D /* ActionTypes.swift */,
 			);
 			path = AlertKit;
 			sourceTree = "<group>";
@@ -254,7 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EAE084F1BEFCC5400F31E9D /* Alert.swift in Sources */,
+				9EAE08531BF1CE3100F31E9D /* ActionTypes.swift in Sources */,
+				9EAE08511BF1C89300F31E9D /* AlertTypes.swift in Sources */,
+				9EAE084F1BEFCC5400F31E9D /* AlertKIt.swift in Sources */,
 				9EAE08231BEFCC3000F31E9D /* ViewController.swift in Sources */,
 				9EAE08211BEFCC3000F31E9D /* AppDelegate.swift in Sources */,
 			);
@@ -473,6 +481,7 @@
 				9EAE08471BEFCC3000F31E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EAE08481BEFCC3000F31E9D /* Build configuration list for PBXNativeTarget "AlertKitTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +490,7 @@
 				9EAE084A1BEFCC3000F31E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EAE084B1BEFCC3000F31E9D /* Build configuration list for PBXNativeTarget "AlertKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +499,7 @@
 				9EAE084D1BEFCC3000F31E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
