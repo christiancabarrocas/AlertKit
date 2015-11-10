@@ -6,18 +6,15 @@
 //  Copyright © 2015 Wasabilabs. All rights reserved.
 //
 
-enum Type {
-    case unknown
-    case Timeout
-    case NetworkError
-    case CredentialsConfirmation
-}
+//enum Type {
+//    case unknown
+//    case Timeout
+//    case NetworkError
+//    case CredentialsConfirmation
+//}
 
 protocol Alertable {
-    var data:AlertData {
-        get {}
-    }
-//    func alertData () -> AlertData
+    var data:AlertData {get}
 }
 
 struct AlertData {
@@ -26,23 +23,15 @@ struct AlertData {
     let actions:[Actionable]!
 }
 
-//struct TimeoutAlert:Alertable {
-//    func alertData() -> AlertData {
-//        return AlertData(title: "Connection timed out", message: nil, actions: [ActionOK()])
-//    }
-//}
-
-struct NetworkErrorAlert:Alertable {
-    
-    let data = AlertData(title: "No internet connection.", message: nil, actions: [ActionOK()])
-//    func alertData() -> AlertData {
-//        return AlertData(title: "No internet connection.", message: nil, actions: [ActionOK()])
-//    }
+struct Timeout:Alertable {
+    let data = AlertData(title: "Connection timed out", message: nil, actions: [ActionOK()])
 }
 
-//struct CredentialsConfirmation:Alertable {
-//    func alertData() -> AlertData {
-//        return AlertData(title: "Is this correct?", message: "Please check the below information", actions: [ActionCancel()])
-//    }
-//}
+struct NetworkError:Alertable {
+    let data = AlertData(title: "No internet connection.", message: nil, actions: [ActionOK()])
+}
+
+struct CredentialsConfirmation:Alertable {
+    let data = AlertData(title: "Is this correct?", message: "Please check the below information", actions: [ActionCancel()])
+}
 

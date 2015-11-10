@@ -12,7 +12,6 @@ class TestController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        AlertKit(show: NetworkErrorAlert,from:self).show()
-//        AlertKit().show(NetworkErrorAlert(), controller: self)
+        self.showAlert(NetworkError())
     }
 }

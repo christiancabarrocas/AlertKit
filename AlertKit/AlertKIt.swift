@@ -8,18 +8,9 @@
 
 import UIKit
 
-struct AlertKit {
-    
-    var show:Alertable
-    var from:UIViewController
-
-    func show () {
-        let alert = UIAlertController(title: show.alertData().title, message: show.alertData().message, preferredStyle:.Alert)
-        from.presentViewController(alert, animated: true, completion: nil)
+extension UIViewController {
+    func showAlert (type:Alertable) {
+        let alert = UIAlertController(title: type.data.title, message: type.data.message, preferredStyle:.Alert)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
-    
-//    func show (type:Alertable,controller:UIViewController) {
-//        let alert = UIAlertController(title: type.alertData().title, message: type.alertData().message, preferredStyle:.Alert)
-//        controller.presentViewController(alert, animated: true, completion: nil)
-//    }
 }
