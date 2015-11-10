@@ -6,13 +6,6 @@
 //  Copyright © 2015 Wasabilabs. All rights reserved.
 //
 
-//enum Type {
-//    case unknown
-//    case Timeout
-//    case NetworkError
-//    case CredentialsConfirmation
-//}
-
 protocol Alertable {
     var data:AlertData {get}
 }
