@@ -9,8 +9,11 @@
 import UIKit
 
 extension UIViewController {
-    func showAlert (type:Alertable) {
-        let alert = UIAlertController(title: type.data.title, message: type.data.message, preferredStyle:.Alert)
+    func showAlert (alertType:Alertable) {
+        let alert = UIAlertController(title: alertType.data.title, message: alertType.data.message, preferredStyle:.Alert)
+        for item in alertType.data.actions {
+            alert.addAction(item.action)
+        }
         self.presentViewController(alert, animated: true, completion: nil)
     }
 }
