@@ -13,7 +13,7 @@ protocol Alertable {
 struct AlertData {
     let title:String!
     let message:String!
-    let actions:[Actionable]!
+    let actions:[ButtonActionable]!
 }
 
 struct Timeout:Alertable {

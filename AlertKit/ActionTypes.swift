@@ -8,25 +8,25 @@
 
 import UIKit
 
-protocol Actionable {
+protocol ButtonActionable {
     var action : UIAlertAction {get}
 }
 
-struct ActionOK:Actionable {
+struct ActionOK:ButtonActionable {
     let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
 }
 
-struct ActionCancel:Actionable {
+struct ActionCancel:ButtonActionable {
     let action = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
 }
 
-struct ActionCredentialsOK:Actionable {
+struct ActionCredentialsOK:ButtonActionable {
     let action = UIAlertAction(title: "Yes", style: .Default) { (action) -> Void in
         
     }
 }
 
-struct ActionTest:Actionable {
+struct ActionTest:ButtonActionable {
     let action = UIAlertAction(title: "Testing actions", style: .Default) {Void -> Void in
         
     }
