@@ -13,15 +13,21 @@ protocol Actionable {
 }
 
 struct ActionOK:Actionable {
-    let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+    let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
 }
 
 struct ActionCancel:Actionable {
-    let action = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil)
+    let action = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
 }
 
 struct ActionCredentialsOK:Actionable {
-    let action = UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default) { (action) -> Void in
+    let action = UIAlertAction(title: "Yes", style: .Default) { (action) -> Void in
+        
+    }
+}
+
+struct ActionTest:Actionable {
+    let action = UIAlertAction(title: "Testing actions", style: .Default) {Void -> Void in
         
     }
 }
