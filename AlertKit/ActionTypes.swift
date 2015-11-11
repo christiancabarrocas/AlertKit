@@ -8,13 +8,8 @@
 
 import UIKit
 
-enum Action {
-    case Ok
-    case Cancel
-}
-
 protocol Actionable {
-
+    var action : UIAlertAction {get}
 }
 
 struct ActionOK:Actionable {
