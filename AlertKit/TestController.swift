@@ -12,6 +12,6 @@ class TestController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        self.showAlert(NetworkError())
+        self.showAlert(CredentialsConfirmation())
     }
 }

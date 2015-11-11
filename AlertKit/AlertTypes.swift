@@ -25,6 +25,6 @@ struct NetworkError:Alertable {
 }
 
 struct CredentialsConfirmation:Alertable {
-    let data = AlertData(title: "Is this correct?", message: "Please check the below information", actions: [ActionCancel()])
+    let data = AlertData(title: "Is this correct?", message: "Please check the below information", actions: [ActionCredentialsOK(),ActionCancel()])
 }
 
