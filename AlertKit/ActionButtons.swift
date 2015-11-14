@@ -24,7 +24,9 @@ struct ActionCancel:ButtonActionable {
 }
 
 struct ActionCredentialsOK:ButtonActionable {
-    let functionCall = Login().start()
+    let functionCall = {
+        
+    }
     let button = UIAlertAction(title: "Yes", style: .Default) { (action) -> Void in
 
     }

@@ -12,7 +12,7 @@ extension UIViewController {
     func showAlert (alertType:Alertable) {
         let alert = UIAlertController(title: alertType.data.title, message: alertType.data.message, preferredStyle:.Alert)
         for item in alertType.data.actions {
-            alert.addAction(item.action)
+            alert.addAction(item.button)
         }
         self.presentViewController(alert, animated: true, completion: nil)
     }
