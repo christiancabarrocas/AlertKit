@@ -10,24 +10,24 @@ import UIKit
 
 protocol ButtonActionable {
     var button : UIAlertAction {get}
-    var functionCall:() -> Void {get}
+}
+
+extension ButtonActionable {
+    func actionCredentials () {
+        print ("Credentials confirmed")
+    }
 }
 
 struct ActionOK:ButtonActionable {
     let button = UIAlertAction(title: "Ok", style: .Default, handler: nil)
-    let functionCall = {}
 }
 
 struct ActionCancel:ButtonActionable {
     let button = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
-    let functionCall = {}
 }
 
 struct ActionCredentialsOK:ButtonActionable {
-    let functionCall = {
-        
-    }
     let button = UIAlertAction(title: "Yes", style: .Default) { (action) -> Void in
-
+        actionCredentials()
     }
 }
