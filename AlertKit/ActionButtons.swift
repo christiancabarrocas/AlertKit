@@ -13,7 +13,7 @@ protocol ButtonActionable {
 }
 
 extension ButtonActionable {
-    func actionCredentials () {
+    func actionCredentialsConfirmed() {
         print ("Credentials confirmed")
     }
 }
@@ -28,6 +28,6 @@ struct ActionCancel:ButtonActionable {
 
 struct ActionCredentialsOK:ButtonActionable {
     let button = UIAlertAction(title: "Yes", style: .Default) { (action) -> Void in
-        actionCredentials()
+        actionCredentialsConfirmed()
     }
 }
