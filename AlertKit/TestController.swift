@@ -8,10 +8,11 @@
 
 import UIKit
 
+//WISH FORMAT: self.show.alert("title", message: "message", actions:[])
 class TestController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        self.showAlert(CredentialsConfirmation())
+        self.show().actionSheet(AlertData(title: "title", message: "message", actions: []))
     }
 }

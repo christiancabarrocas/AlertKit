@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9EAD46231BF3DE100040326F /* AlertTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD46221BF3DE100040326F /* AlertTypesTests.swift */; };
 		9EAD46251BF3DED90040326F /* AlertKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD46241BF3DED90040326F /* AlertKitTests.swift */; };
 		9EAE08211BEFCC3000F31E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08201BEFCC3000F31E9D /* AppDelegate.swift */; };
 		9EAE08261BEFCC3000F31E9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EAE08241BEFCC3000F31E9D /* Main.storyboard */; };
 		9EAE08281BEFCC3000F31E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EAE08271BEFCC3000F31E9D /* Assets.xcassets */; };
 		9EAE08361BEFCC3000F31E9D /* AlertActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08351BEFCC3000F31E9D /* AlertActionsTests.swift */; };
-		9EAE08411BEFCC3000F31E9D /* AlertKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08401BEFCC3000F31E9D /* AlertKitUITests.swift */; };
 		9EAE084F1BEFCC5400F31E9D /* AlertKIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE084E1BEFCC5400F31E9D /* AlertKIt.swift */; };
-		9EAE08511BF1C89300F31E9D /* AlertTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08501BF1C89300F31E9D /* AlertTypes.swift */; };
 		9EAE08531BF1CE3100F31E9D /* ActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08521BF1CE3100F31E9D /* ActionButtons.swift */; };
 		9EAE08551BF289B800F31E9D /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08541BF289B800F31E9D /* TestController.swift */; };
 /* End PBXBuildFile section */
@@ -38,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9EAD46221BF3DE100040326F /* AlertTypesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTypesTests.swift; sourceTree = "<group>"; };
 		9EAD46241BF3DED90040326F /* AlertKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertKitTests.swift; sourceTree = "<group>"; };
 		9EAE081D1BEFCC3000F31E9D /* AlertKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAE08201BEFCC3000F31E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,10 +45,8 @@
 		9EAE08351BEFCC3000F31E9D /* AlertActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionsTests.swift; sourceTree = "<group>"; };
 		9EAE08371BEFCC3000F31E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EAE083C1BEFCC3000F31E9D /* AlertKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EAE08401BEFCC3000F31E9D /* AlertKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertKitUITests.swift; sourceTree = "<group>"; };
 		9EAE08421BEFCC3000F31E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EAE084E1BEFCC5400F31E9D /* AlertKIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertKIt.swift; sourceTree = "<group>"; };
-		9EAE08501BF1C89300F31E9D /* AlertTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTypes.swift; sourceTree = "<group>"; };
 		9EAE08521BF1CE3100F31E9D /* ActionButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButtons.swift; sourceTree = "<group>"; };
 		9EAE08541BF289B800F31E9D /* TestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,7 +105,6 @@
 				9EAE08271BEFCC3000F31E9D /* Assets.xcassets */,
 				9EAE082C1BEFCC3000F31E9D /* Info.plist */,
 				9EAE084E1BEFCC5400F31E9D /* AlertKIt.swift */,
-				9EAE08501BF1C89300F31E9D /* AlertTypes.swift */,
 				9EAE08521BF1CE3100F31E9D /* ActionButtons.swift */,
 			);
 			path = AlertKit;
@@ -121,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				9EAE08351BEFCC3000F31E9D /* AlertActionsTests.swift */,
-				9EAD46221BF3DE100040326F /* AlertTypesTests.swift */,
 				9EAD46241BF3DED90040326F /* AlertKitTests.swift */,
 				9EAE08371BEFCC3000F31E9D /* Info.plist */,
 			);
@@ -131,7 +123,6 @@
 		9EAE083F1BEFCC3000F31E9D /* AlertKitUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9EAE08401BEFCC3000F31E9D /* AlertKitUITests.swift */,
 				9EAE08421BEFCC3000F31E9D /* Info.plist */,
 			);
 			path = AlertKitUITests;
@@ -268,7 +259,6 @@
 			files = (
 				9EAE08551BF289B800F31E9D /* TestController.swift in Sources */,
 				9EAE08531BF1CE3100F31E9D /* ActionButtons.swift in Sources */,
-				9EAE08511BF1C89300F31E9D /* AlertTypes.swift in Sources */,
 				9EAE084F1BEFCC5400F31E9D /* AlertKIt.swift in Sources */,
 				9EAE08211BEFCC3000F31E9D /* AppDelegate.swift in Sources */,
 			);
@@ -278,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EAD46231BF3DE100040326F /* AlertTypesTests.swift in Sources */,
 				9EAE08361BEFCC3000F31E9D /* AlertActionsTests.swift in Sources */,
 				9EAD46251BF3DED90040326F /* AlertKitTests.swift in Sources */,
 			);
@@ -288,7 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EAE08411BEFCC3000F31E9D /* AlertKitUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
