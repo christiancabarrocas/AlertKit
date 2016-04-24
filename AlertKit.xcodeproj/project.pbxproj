@@ -11,7 +11,6 @@
 		9EAE08211BEFCC3000F31E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08201BEFCC3000F31E9D /* AppDelegate.swift */; };
 		9EAE08261BEFCC3000F31E9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EAE08241BEFCC3000F31E9D /* Main.storyboard */; };
 		9EAE08281BEFCC3000F31E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EAE08271BEFCC3000F31E9D /* Assets.xcassets */; };
-		9EAE08361BEFCC3000F31E9D /* AlertActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08351BEFCC3000F31E9D /* AlertActionsTests.swift */; };
 		9EAE084F1BEFCC5400F31E9D /* AlertKIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE084E1BEFCC5400F31E9D /* AlertKIt.swift */; };
 		9EAE08531BF1CE3100F31E9D /* ActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08521BF1CE3100F31E9D /* ActionButtons.swift */; };
 		9EAE08551BF289B800F31E9D /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE08541BF289B800F31E9D /* TestController.swift */; };
@@ -42,7 +41,6 @@
 		9EAE08271BEFCC3000F31E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EAE082C1BEFCC3000F31E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EAE08311BEFCC3000F31E9D /* AlertKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EAE08351BEFCC3000F31E9D /* AlertActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionsTests.swift; sourceTree = "<group>"; };
 		9EAE08371BEFCC3000F31E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EAE083C1BEFCC3000F31E9D /* AlertKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAE08421BEFCC3000F31E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 		9EAE08341BEFCC3000F31E9D /* AlertKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				9EAE08351BEFCC3000F31E9D /* AlertActionsTests.swift */,
 				9EAD46241BF3DED90040326F /* AlertKitTests.swift */,
 				9EAE08371BEFCC3000F31E9D /* Info.plist */,
 			);
@@ -268,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EAE08361BEFCC3000F31E9D /* AlertActionsTests.swift in Sources */,
 				9EAD46251BF3DED90040326F /* AlertKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

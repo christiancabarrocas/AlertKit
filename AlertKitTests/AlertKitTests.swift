@@ -18,12 +18,4 @@ class AlertKitTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
-    
-    func DISABLEDtestShowAlert () {
-        let testView = UIViewController()
-        testView.loadView()
-        testView.showAlert(NetworkError())
-        XCTAssertNotNil(testView.presentedViewController)
-    }
-
 }
